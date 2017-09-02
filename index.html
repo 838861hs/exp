@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>動画のテストサイト</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="window" class="wrapper">
+  <div class="cover"></div>
+    <header>
+    <div class="inner">
+      <h1>logo</h1>
+      <ul>
+        <li><a href="#">service</a></li>
+        <li><a href="#">recruit</a></li>
+        <li><a href="#">news</a></li>
+        <li><a href="#">company</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </div><!-- inner -->
+    </header>
+  </div><!-- wrappre -->
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.tubular.1.0.js"></script>
+  <script>
+  $(function(){
+      $('document').ready(function() {
+          var options = { videoId: 'q_BYvUlDviM'};
+          $('#window').tubular(options);
+      });
+  });
+  </script>
+</body>
+</html>
