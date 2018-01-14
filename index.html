@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="window" class="wrapper">
-  <div class="cover"></div>
+<div id="window" class="cover"></div>
+  <div  class="wrapper">
     <header>
     <div class="inner">
       <h1>logo</h1>
@@ -21,19 +21,33 @@
       </ul>
     </div><!-- inner -->
     </header>
+    <h2>centerText</h2>
   </div><!-- wrappre -->
   <script
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
   <script src="js/jquery.tubular.1.0.js"></script>
+
+
   <script>
-  $(function(){
-      $('document').ready(function() {
-          var options = { videoId: 'q_BYvUlDviM'};
-          $('#window').tubular(options);
-      });
-  });
+  $(window).on('load resize',function(){
+        //PC環境の場合
+        if (window.matchMedia( '(min-width: 649px)' ).matches) {　//切り替える画面サイズ
+            $.ajax({
+                url: 'js/pc.js',
+                dataType: 'script',
+                cache: false
+          });
+        //モバイル環境の場合
+        } else {
+           $.ajax({
+                url: 'js/sp.js',
+                dataType: 'script',
+                cache: false
+            });
+        };
+    });
   </script>
 </body>
 </html>
