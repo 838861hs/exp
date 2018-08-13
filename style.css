@@ -120,6 +120,37 @@ main{
   margin: 0 5%;
 }
 
+.news_paper{
+  background: #444;
+  overflow: hidden;
+}
+.news_paper dl{
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.news_paper dl:after,
+.news_paper dl:before{
+  content: "";
+  clear: both;
+}
+.news_paper dl dt{
+  float: left;
+  width: 50%;
+  margin-right: 23px;
+}
+.news_paper dl dt img{
+  width: 100%;
+}
+.news_paper dl dd:first-letter{
+  font-size: 28px;
+  font-weight: bold;
+}
+.news_paper dl:nth-child(3){
+  width: 100%;
+}
 footer{
   background: #ddd;
   text-align: center;
