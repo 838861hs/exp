@@ -68,10 +68,24 @@ main{
   color: #fff;
   border-right: 1px solid #fff;
   box-sizing: border-box;
+  position: relative;
+}
+.three_column .inner div:after{
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffff;
+  border-left: 30px solid #fff;
+  border-bottom: 30px solid #ddd;
 }
 .three_column .inner div:last-child{
   border-right: 0;
 }
+
 .half_back{
   overflow: hidden;
   position: relative;
@@ -105,6 +119,7 @@ main{
 .half_back .hb_inner div:nth-child(2){
   margin: 0 5%;
 }
+
 footer{
   background: #ddd;
   text-align: center;
