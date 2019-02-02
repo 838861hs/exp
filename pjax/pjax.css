@@ -1,0 +1,101 @@
+@charset "utf-8";
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+header{
+  text-align: center;
+  background: #999;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+nav{
+  background: #999;
+  border-bottom: 1px solid #fff;
+}
+nav ul{
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+nav ul li{
+  float: left;
+  width: 25%;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  font-weight: bold;
+}
+nav ul li a{
+  color: #fff;
+  display: block;
+  transition: .3s;
+}
+nav ul li a:hover{
+  background: #fff;
+  color: #999;
+}
+main{
+  background: #999;
+  height: 2000px;
+}
+main .inner{
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 10px;
+}
+main .inner aside,
+main .inner section{
+  float: left;
+}
+main .inner aside{
+  width: 30%;
+  margin-right: 5%;
+}
+main .inner aside ul{
+  border: 5px double #fff;
+}
+main .inner aside ul li{
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #fff;
+}
+main .inner aside ul li:last-child{
+  border: none;
+}
+main .inner aside ul li a{
+  display: block;
+  color: #fff;
+  font-weight: bold;
+}
+main .inner aside ul li a:hover{
+  background: #fff;
+  color: #999;
+  transition: .3s;
+}
+main .inner section{
+  width: 65%;
+  box-sizing: border-box;
+  border: 5px double #fff;
+  line-height: 500px;
+  height: 500px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+main .inner section.page2{
+  background: #000;
+  width: 100%;
+}
+main .inner section.page3{
+  background: #333;
+}
+main .inner section.page4{
+  background: #fff;
+  color: #000;
+}
