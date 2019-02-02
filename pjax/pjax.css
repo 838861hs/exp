@@ -94,8 +94,22 @@ main .inner section.page2{
 }
 main .inner section.page3{
   background: #333;
+  float: right;
 }
 main .inner section.page4{
   background: #fff;
   color: #000;
+}
+
+#barba-wrapper {
+    overflow: hidden;
+}
+
+.barba-container {
+    transition: all .5s;
+}
+
+.is-transition-start .barba-container {
+    opacity: 0;
+    transform: translate3d(100px,0,0);
 }
