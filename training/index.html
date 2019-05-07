@@ -20,6 +20,36 @@
       <li><a href="#">text</a></li>
     </ul>
   </nav>
+  <main>
+   <div class="inner">
+    <div>left</div>
+    <div>center</div>
+    <div>right</div>
+   </div><!-- inner -->
+  </main>
 </div><!-- wrapper -->
+<script>
+/*クリックでスタイル変更*/
+var h_one = document.querySelector('h1');
+h_one.onclick =function(){
+  this.style.backgroundColor = "red";
+}
+
+/*クリ九でclassToggle付与*/
+h_one.onclick =function(){
+  this.classList.toggle('ex');
+}
+
+
+  
+// function h1_click(){
+//   var h_one = document.querySelector('h1');
+//   h_one.style.backgroundColor = "red";
+// }
+
+// h_one.style.background="red";
+
+
+</script>
 </body>
 </html>
