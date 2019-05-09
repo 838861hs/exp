@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script> -->
+
+    <!-- <script src="vivus.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.2/vivus.js"></script>
+
+    <title>Document</title>
+    <style type="text/css">
+      .st0 {
+        fill: none;
+        stroke: #00f4ff;
+      }
+      path {
+        fill-opacity: 0;
+        transition: fill-opacity 1s;
+      }
+      .fill path {
+        fill: #ff94df;
+        fill-opacity: 1;
+        stroke: none;
+      }
+    </style>
+</head>
+<body>
+<div class="contents">
+  <div class="box">
+      <svg id="test_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.04 50.17"><defs><style>.cls-1{fill:#fff;stroke:#000;stroke-miterlimit:10;}</style></defs><title>a</title><path class="cls-1" d="M64.5,168.93c23.18,0,36.61.45,36.61.45l33,48.66-55.35-3.58L83.25,189,58.7,193.93S62.71,168.93,64.5,168.93Z" transform="translate(-58.09 -168.43)"/></svg>
+<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path fill-rule="evenodd"  fill="rgb(18, 67, 154)" d="M220.051,-0.000 L345.795,290.467 L770.179,216.766 L864.487,463.880 L1178.846,407.521 L1226.000,724.000 L1053.102,498.563 L707.308,546.251 L613.000,307.808 L188.615,394.515 L-0.000,43.353 L220.051,-0.000 Z"/>
+</svg> -->
+  </div><!-- box -->
+</div><!-- contents -->
+<script>
+    new Vivus('test_svg', 
+    {
+      duration: 400,
+      start: 'autostart',
+      pathTimingFunction: Vivus.EASE_OUT
+      }, 
+      function(obj){
+        obj.classList.add('fill');
+      }
+      );
+  </script>
+</body>
+</html>
